@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Assignment 8</title>
+  <meta charset="utf-8">
+   <script src="a8.js" type="text/javascript" defer></script>
+</head>
+<body>
+ <h1>CPSC 1045 Take Out Ordering</h1>
+ Main <select id="main">
+    <option value="Lamb Vindaloo">Lamb Vindaloo</option>
+    <option value="Butter Chicken">Butter Chicken</option>
+    <option value="Prawn Masala">Prawn Masala</option>
+    </select>
+    <p></p>
+    <fieldset style="width: 350px">
+        <legend>Select Your Side Dishes</legend>
+        <p></p>
+         Side Dishes <select id="side">
+        <option value="Papadums">Papadums</option>
+        <option value="Samosas">Samosas</option>
+        <option value="Pakoras">Pakoras</option>
+        <option value="Kheer">Kheer</option>
+        </select>
+        <p></p>
+        <button id="add" type="button" onclick="add()">Add Side Dish</button>
+        <button id="remove" type="button" onclick="remove()">Remove Side Dish</button>
+        <p></p>
+        Current Side Dishes
+        <p></p>
+        <ul id="TheHardOne"></ul>
+    </fieldset>
+    <p></p>
+ Would you like Rice or Naan? <input id="Rice" type="checkbox">Rice <input id="Naan" type="checkbox">Naan
+    <p></p>
+    <button id="cal" type="button" onclick="cal()">Calculate Cost</button>
+    <p></p>
+    <h3>Total Cost: </h3>
+    <div id="cost_div"></div>
+</body>
+</html>
